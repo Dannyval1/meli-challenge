@@ -1,0 +1,21 @@
+.generalBody{
+    width: 70%;
+}
+
+main{
+    background-color: #ebebeb;
+}
+
+.title-example{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.example-products{
+    .card{
+        &:hover{
+            box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+            transition: .2s;
+        }
+    }
+} 

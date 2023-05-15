@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -44,3 +44,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Some Details of Meli Challenge
+I have created a Main Page. This has not any functionality, that's only for better visualization of the challenge from the beggining. When you use the search box with any keyword, you can click in the "Search" Icon, or you can press the ENTER key in your keyboard.
+
+You will get a list of items from the service, but you will see only four items in the screen.
+
+I don't have the page for the possibility when you don't get any result. That's not covered in the test, neither a 404 page.
+
+All this challenge has been solved with React, SASS, Typescript, Jest testing, Bootstrap, Axios.
+
