@@ -1,0 +1,55 @@
+.whiteBack{
+    background-color: #fff;
+}
+
+.product{
+    border-radius: 4px;
+}
+
+.productShipping{
+    width: 22px;
+}
+
+.padding-16{
+    padding: 16px;
+}
+
+.productPrice{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 32px;
+    .price{
+        margin: 0;
+        margin-right: 5px;
+        font-size: 21px;
+    }
+}
+
+.shortDescription{
+    color: #999999;
+    font-size: 12px;
+    margin-top: 35px;
+}
+
+.itemResultQuery{
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 20px;
+    cursor: pointer;
+    &:last-child{
+        border-bottom: 0;
+    }
+}
+
+.searchText{
+    text-align: center;
+    padding: 50px 0 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+    .product{
+        margin-right: 16px;
+    }
+}

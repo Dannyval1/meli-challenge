@@ -1,0 +1,71 @@
+.largeImageProduct{
+    width: 100%;
+}
+
+.whiteBack{
+    background-color: #fff;
+}
+
+.breadcrumb{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #999;
+}
+
+.general-padding-32{
+    padding: 32px;
+}
+
+.shortDescription{
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #333;
+}
+
+.largeDescription{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.largePrice{
+    font-size: 46px;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+.infoProduct{
+    margin-top: 32px;
+
+    h3{
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+    p{
+        font-size: 16px;
+        color: #666;
+    }
+}
+
+.border-radius-5{
+    border-radius: 5px;
+}    
+
+.btn-meli{
+    background-color: #3483fa;
+    border-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    border-radius: 6px;
+    width: 100%;
+    &:hover{
+            background-color: #2968c8;
+            border-color: transparent;
+            color: #fff;
+            -webkit-transition: background-color .2s ease-in;
+            transition: background-color .2s ease-in;
+        }
+}
