@@ -10,14 +10,23 @@ import searchingIcon from "./../../assets/search-icon.png";
 import "./Header.scss";
 
 export const Header = () => {
+  /**
+   * This Component can be taken as a layout since it is repeated in all the views. It is in charge of carrying out the search
+   */
   const navigate = useNavigate();
   const [valueSearch, setValueSearch] = useState({});
 
+  /**
+   * Function in charge of catching the value of the search input is saved in a state
+   */
   const getValueQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
     const valueQuery = e.target.value;
     setValueSearch(valueQuery);
   };
 
+  /**
+   * This function redirects the user to the search view
+   */
   const goSearch = () => {
     navigate({
       pathname: "/items",

@@ -8,6 +8,9 @@ import { useParams } from "react-router-dom";
 import { details, descriptions } from "../../services/api";
 import { sortResultDetail } from "../../services/handleServicesResponse/Interfaces/sortResultDetail";
 
+/**
+ * This is the Initial State of the Detail Result based on an interface to ensure the integrity of the result
+ */
 const DetailState: DetailResultInterface = {
   author: {
     name: "",
@@ -28,6 +31,9 @@ const DetailState: DetailResultInterface = {
   },
 };
 
+/**
+ * This component shows the product details and its description
+ */
 export const ProductDetail = () => {
   const [detailResultState, setDetailResultState] =
     useState<DetailResultInterface>(DetailState);
@@ -38,10 +44,18 @@ export const ProductDetail = () => {
   }, []);
 
   const service = async () => {
+    /**
+     * We use this function to jointly consume the detail and description services.
+     * This is because, since they are not dependent on each other, it is perfectly feasible to do them simultaneously.
+     */
     const [detail, description] = await Promise.all([
       details(params.id),
       descriptions(params.id),
     ]);
+
+    /**
+     * We rearrange the answers creating a unique object
+     */
     setDetailResultState(sortResultDetail(detail, description));
   };
 
