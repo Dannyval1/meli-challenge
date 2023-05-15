@@ -3,6 +3,9 @@ import { Footer } from "../views/Footer/Footer";
 
 
 const Main = ({ children }: any) => {
+/**
+ * This is the main component. We have the reserved word "Children" for showing the data.
+ * */
   return (
     <>
       <Header />

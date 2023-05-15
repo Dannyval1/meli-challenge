@@ -20,6 +20,9 @@ const sortResultInitialState: sortResultInterface = {
   items: [],
 };
 
+/**
+ * This Component displays the search results
+ */
 export const QueryResult = () => {
   const navigate = useNavigate();
   const [sortResultState, setSortResultState] = useState<sortResultInterface>(
@@ -42,6 +45,7 @@ export const QueryResult = () => {
   const listProducts = () => {
     const productList = sortResultState.items.map(
       (item: any, index: any) =>
+      // We limit here the max value of items that we will show in the screen
         index < 4 && (
           <div
             className="itemResultQuery"
@@ -82,6 +86,9 @@ export const QueryResult = () => {
     return <div>{productList}</div>;
   };
 
+  /**
+   * This function is in charge of directing to the detail view
+   */
   const goProduct = (productId: string) => {
     navigate({
       pathname: "/items/" + productId,
